@@ -9,7 +9,10 @@ memory: 2000Gb
 laboratory: /short/v45/aph502/COSIMA/access-om
 
 collate: true
-
+collate_walltime: 4:00:00
+collate_mem: 30GB
+collate_ncpus: 4
+collate_queue: express
 collate_flags: -n4 -z -m -r
 
 # Model configuration
@@ -23,7 +26,7 @@ submodels:
     - name: atmosphere
       model: matm
       exe: matm_nt62.exe
-      input: core2_nyf_matm
+      input: jra55-0.8
       ncpus: 1
 
     - name: ocean
