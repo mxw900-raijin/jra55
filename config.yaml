@@ -1,0 +1,61 @@
+# PBS configuration
+queue: express
+project: x77
+walltime: 04:00:00
+jobname: access-om-025
+ncpus: 1153
+memory: 2000Gb
+
+laboratory: /short/v45/aph502/COSIMA/access-om
+
+collate: true
+
+collate_flags: -n4 -z -m -r
+
+# Model configuration
+model: access
+submodels:
+    - name: coupler
+      model: oasis
+      input: oasis
+      ncpus: 0
+
+    - name: atmosphere
+      model: matm
+      exe: matm_nt62.exe
+      input: core2_nyf_matm
+      ncpus: 1
+
+    - name: ocean
+      model: mom
+      exe: fms_ACCESS-OM.x
+      input: 
+            - mom
+            # - iaf-sw21d
+      ncpus: 960
+
+    - name: ice
+      model: cice
+      exe: cice_access-om_1440x1080_192p.exe
+      input: cice
+      ncpus: 192
+
+
+calendar:
+    runtime:
+        years: 0
+        months: 1
+        days: 0
+
+    start:
+        year: 1
+        month: 1
+        days: 1
+
+
+# Misc
+stacksize: unlimited
+
+runlog: true
+
+debug: false
