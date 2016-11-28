@@ -91,121 +91,93 @@
 ##########
 # Field 01 : swflx down
 ##########
-swfld_ai swfld_i 367 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+swfld_ai swfld_i 367 21600 1 a2i.nc EXPORTED
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 #########
 # Field 02 : lwflx down
 ##########
 lwfld_ai lwfld_i 366 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 03 : rainfall
 ##########
 rain_ai rain_i 26 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 04 : snowfall
 ##########
 snow_ai snow_i 26 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 05 : surface pressure
 ##########
 press_ai press_i 33 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
-# 
-LOCTRANS MAPPING SCRIPR
+#
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 06 : runoff
 ##########
 runof_ai runof_i 297 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
-# 
-LOCTRANS MAPPING SCRIPR
+#
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 07 : near surface (2m) air temp
 ##########
 tair_ai tair_i 110 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 08 : 2m air humidity
 ##########
 qair_ai qair_i 339 21600 3 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ##########
 # Field 09 : 10m wind (u)
 ##########
 uwnd_ai uwnd_i 56 21600 2 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-MAPPING SCRIPR
-#
-rmp_nt62_to_cice_DISTWGT.nc dst
-DISTWGT LR VECTOR LATLON 10 4 vwnd_ai
+LOCTRANS
+INSTANT
 ##########
 # Field 10 : 10m wind (v)
 ##########
 vwnd_ai vwnd_i 56 21600 2 a2i.nc EXPORTED
-192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-MAPPING SCRIPR
-#
-rmp_nt62_to_cice_DISTWGT.nc dst
-DISTWGT LR VECTOR LATLON 10 4 uwnd_ai
-#-------------------------------------------------
-#vwnd_ai vwnd_i 56 21600 2 a2i.nc EXPORTED
-#192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
-#P  0  P  0
-##
-#LOCTRANS INTERP
-#INSTANT
-#BICUBIC  G  SCALAR
+LOCTRANS
+INSTANT
 ############################################################################
 #
 #                      ICE --->>> OCEAN
@@ -424,12 +396,10 @@ INSTANT
 # Field 33 : ice/ocean surface temp (no ref no! '331' is snow temp!)
 ##########
 isst_ia isst_a 331 21600 3 i2a.nc EXPORTED
-1440 1080 192 94 cice nt62 LAG=+1200 SEQ=+1
-P 0 P 0
+1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
+P  0  P  0
 #
-LOCTRANS MAPPING SCRIPR
+LOCTRANS
 INSTANT
-rmp_cice_to_nt62_CONSERV_FRACNNEI.nc dst
-CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
 ############################################################################
  $END

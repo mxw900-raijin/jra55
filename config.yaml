@@ -25,13 +25,13 @@ submodels:
 
     - name: atmosphere
       model: matm
-      exe: matm_nt62.exe
-      input: jra55-0.8
+      exe: matm_cice.exe
+      input: jra55-0.8_025
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM.x.debug
+      exe: fms_ACCESS-OM.x
       input: 
             - mom
             # - iaf-sw21d
