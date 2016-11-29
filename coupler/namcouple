@@ -93,7 +93,7 @@
 ##########
 swfld_ai swfld_i 367 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -102,7 +102,7 @@ INSTANT
 ##########
 lwfld_ai lwfld_i 366 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -111,7 +111,7 @@ INSTANT
 ##########
 rain_ai rain_i 26 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -120,7 +120,7 @@ INSTANT
 ##########
 snow_ai snow_i 26 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -129,7 +129,7 @@ INSTANT
 ##########
 press_ai press_i 33 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -138,7 +138,7 @@ INSTANT
 ##########
 runof_ai runof_i 297 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -147,7 +147,7 @@ INSTANT
 ##########
 tair_ai tair_i 110 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -156,7 +156,7 @@ INSTANT
 ##########
 qair_ai qair_i 339 21600 3 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -165,7 +165,7 @@ INSTANT
 ##########
 uwnd_ai uwnd_i 56 21600 2 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -174,7 +174,7 @@ INSTANT
 ##########
 vwnd_ai vwnd_i 56 21600 2 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
