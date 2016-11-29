@@ -100,7 +100,7 @@ INSTANT
 #########
 # Field 02 : lwflx down
 ##########
-lwfld_ai lwfld_i 366 21600 3 a2i.nc EXPORTED
+lwfld_ai lwfld_i 366 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -109,7 +109,7 @@ INSTANT
 ##########
 # Field 03 : rainfall
 ##########
-rain_ai rain_i 26 21600 3 a2i.nc EXPORTED
+rain_ai rain_i 26 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -118,7 +118,7 @@ INSTANT
 ##########
 # Field 04 : snowfall
 ##########
-snow_ai snow_i 26 21600 3 a2i.nc EXPORTED
+snow_ai snow_i 26 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -127,7 +127,7 @@ INSTANT
 ##########
 # Field 05 : surface pressure
 ##########
-press_ai press_i 33 21600 3 a2i.nc EXPORTED
+press_ai press_i 33 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -136,7 +136,7 @@ INSTANT
 ##########
 # Field 06 : runoff
 ##########
-runof_ai runof_i 297 21600 3 a2i.nc EXPORTED
+runof_ai runof_i 297 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -145,7 +145,7 @@ INSTANT
 ##########
 # Field 07 : near surface (2m) air temp
 ##########
-tair_ai tair_i 110 21600 3 a2i.nc EXPORTED
+tair_ai tair_i 110 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -154,7 +154,7 @@ INSTANT
 ##########
 # Field 08 : 2m air humidity
 ##########
-qair_ai qair_i 339 21600 3 a2i.nc EXPORTED
+qair_ai qair_i 339 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -163,7 +163,7 @@ INSTANT
 ##########
 # Field 09 : 10m wind (u)
 ##########
-uwnd_ai uwnd_i 56 21600 2 a2i.nc EXPORTED
+uwnd_ai uwnd_i 56 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -172,7 +172,7 @@ INSTANT
 ##########
 # Field 10 : 10m wind (v)
 ##########
-vwnd_ai vwnd_i 56 21600 2 a2i.nc EXPORTED
+vwnd_ai vwnd_i 56 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
