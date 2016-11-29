@@ -20,7 +20,7 @@ model: access
 submodels:
     - name: coupler
       model: oasis
-      input: oasis
+      input: oasis_025
       ncpus: 0
 
     - name: atmosphere
