@@ -395,9 +395,9 @@ INSTANT
 ########## 
 # Field 33 : ice/ocean surface temp (no ref no! '331' is snow temp!)
 ##########
-isst_ia isst_a 331 21600 3 i2a.nc EXPORTED
+isst_ia isst_a 331 21600 1 i2a.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P  0  P  0
+P 0 P 0
 #
 LOCTRANS
 INSTANT
