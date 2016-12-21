@@ -13,8 +13,8 @@ INPUT/jra_precip.1984.30Jun2016.nc
 prsn
 INPUT/slp.1984.30Jun2016.nc 
 psl
-INPUT/runoff_from_iaf_16MAR2016_jragrid_1984.nc
-runof
+INPUT/runoff.nc
+runoff
 INPUT/t_10.1984.30Jun2016.nc
 tas_10m
 INPUT/q_10.1984.30Jun2016.nc
