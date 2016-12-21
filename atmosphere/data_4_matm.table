@@ -13,7 +13,7 @@ INPUT/jra_precip.1984.30Jun2016.nc
 prsn
 INPUT/slp.1984.30Jun2016.nc 
 psl
-INPUT/runoff.nc
+INPUT/runoff_spread_n2000_r200_w2.nc
 runoff
 INPUT/t_10.1984.30Jun2016.nc
 tas_10m
