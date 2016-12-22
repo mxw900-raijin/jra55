@@ -39,7 +39,7 @@ submodels:
 
     - name: ice
       model: cice
-      exe: cice_access-om_1440x1080_192p.exe.debug
+      exe: cice_access-om_1440x1080_192p.exe
       input: cice
       ncpus: 192
 
