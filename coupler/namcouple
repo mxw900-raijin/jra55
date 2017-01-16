@@ -324,33 +324,32 @@ INSTANT
 ########## 
 # Field 26 : Sea surface temperature (Celsius in MOM4)
 ##########
-t_surf sst_i 1 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
+t_surf sst_i 1 1200 1 o2i.nc IGNORED
+cice cice LAG=0 SEQ=+1
 #  
 LOCTRANS
 INSTANT
 ########## 
 # Field 27 : Sea surface salinity (psu)
 ##########
-s_surf sss_i 312 1200 1 o2i.nc EXPORTED
+s_surf sss_i 312 1200 1 o2i.nc IGNORED
 cice cice LAG=0 SEQ=+1
-1440 1080 1440 1080 P 0 P 0
 #  
 LOCTRANS
 INSTANT
 ##########
 # Field 28 :  'eastward' sea surface water velocity
 ########## 
-u_surf ssu_i 181 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
+u_surf ssu_i 181 1200 1 o2i.nc IGNORED
+cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
 ########## 
 # Field 29 : 'northward' sea surface water velocity
 ##########
-v_surf ssv_i 261 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
+v_surf ssv_i 261 1200 1 o2i.nc IGNORED
+cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
@@ -358,9 +357,9 @@ INSTANT
 # Field 30 :  frazil ice fromation energy (J/m^2) 
 #             ('441' is "upward_sea_ice_basal_heat_flux' 'W m-2')
 ##########
-#pfmice_oi pfmice_i 441 1200 1 o2i.nc EXPORTED
-frazil pfmice_i 441 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
+#pfmice_oi pfmice_i 441 1200 1 o2i.nc IGNORED
+frazil pfmice_i 441 1200 1 o2i.nc IGNORED
+cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
@@ -368,8 +367,8 @@ INSTANT
 # Field 31 :  sea surface slope _x_ (m/m)
 #             ( '203' is "height" ...)
 ##########
-dssldx sslx_i 203 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
+dssldx sslx_i 203 1200 1 o2i.nc IGNORED
+cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
@@ -377,8 +376,8 @@ INSTANT
 # Field 32 :  sea surface slope _y_ (m/m)
 #             ( '310' is "sea_surface_elevation")
 ########## 
-dssldy ssly_i 310 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
+dssldy ssly_i 310 1200 1 o2i.nc IGNORED
+cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
