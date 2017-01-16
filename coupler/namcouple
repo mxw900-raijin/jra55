@@ -326,7 +326,6 @@ INSTANT
 ##########
 t_surf sst_i 1 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
 #  
 LOCTRANS
 INSTANT
@@ -334,8 +333,8 @@ INSTANT
 # Field 27 : Sea surface salinity (psu)
 ##########
 s_surf sss_i 312 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
+cice cice LAG=0 SEQ=+1
+1440 1080 1440 1080 P 0 P 0
 #  
 LOCTRANS
 INSTANT
@@ -344,7 +343,6 @@ INSTANT
 ########## 
 u_surf ssu_i 181 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -353,7 +351,6 @@ INSTANT
 ##########
 v_surf ssv_i 261 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -364,7 +361,6 @@ INSTANT
 #pfmice_oi pfmice_i 441 1200 1 o2i.nc EXPORTED
 frazil pfmice_i 441 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -374,7 +370,6 @@ INSTANT
 ##########
 dssldx sslx_i 203 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
 #
 LOCTRANS
 INSTANT
@@ -384,7 +379,6 @@ INSTANT
 ########## 
 dssldy ssly_i 310 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
 #
 LOCTRANS
 INSTANT
