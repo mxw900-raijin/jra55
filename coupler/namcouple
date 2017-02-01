@@ -89,90 +89,9 @@
 #                      ATMOSPHERE  --->>>  ICE
 #                      -----------------------
 ##########
-# Field 01 : swflx down
+# Fields 01-10 : swflx down, lwflx down, rainfall, snowfall, surface pressure, runoff, near surface (2m) air temp, 2m air humidity, 10m wind (u), 10m wind (v)
 ##########
-swfld_ai swfld_i 367 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-#########
-# Field 02 : lwflx down
-##########
-lwfld_ai lwfld_i 366 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 03 : rainfall
-##########
-rain_ai rain_i 26 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 04 : snowfall
-##########
-snow_ai snow_i 26 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 05 : surface pressure
-##########
-press_ai press_i 33 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 06 : runoff
-##########
-runof_ai runof_i 297 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 07 : near surface (2m) air temp
-##########
-tair_ai tair_i 110 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 08 : 2m air humidity
-##########
-qair_ai qair_i 339 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 09 : 10m wind (u)
-##########
-uwnd_ai uwnd_i 56 21600 1 a2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 10 : 10m wind (v)
-##########
-vwnd_ai vwnd_i 56 21600 1 a2i.nc EXPORTED
+swfld_ai:lwfld_ai:rain_ai:snow_ai:press_ai:runof_ai:tair_ai:qair_ai:uwnd_ai:vwnd_ai swfld_i:lwfld_i:rain_i:snow_i:press_i:runof_i:tair_i:qair_i:uwnd_i:vwnd_i 1 21600 1 a2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=+1200 SEQ=+1
 P 0 P 0
 #
@@ -183,135 +102,9 @@ INSTANT
 #                      ICE --->>> OCEAN
 #                      ----------------
 ##########
-# Field 11 : ice-ocean interface stress (x-direction)
+# Fields 11-25 : ice-ocean interface stress (x-direction), ice-ocean interface stress (y-direction), freshwater flux, freshwater flux, salt flux (no ref no for saltflux yet!), net heat flux (heatflux into ocean), swflux penetrating through ice into ocean, latent heat flux, Sensible heat flux, LW radiation flux down, runoff, surface pressure, ice concentration, ice melting waterflux, ice forming eaterflux,
 ##########
-strsu_io u_flux 170 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-########## 
-# Field 12 : ice-ocean interface stress (y-direction)
-##########
-strsv_io v_flux 175 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-########## 
-# Field 13 : freshwater flux
-##########
-rain_io lprec 27 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 14 : freshwater flux
-##########
-snow_io fprec 28 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-########## 
-# Field 15 : salt flux   (no ref no for saltflux yet!)
-##########
-stflx_io salt_flx 454 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-########## 
-# Field 16 : next heat flux   (heatflux into ocean. '42' not right.)
-##########
-htflx_io mh_flux 42 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-########## 
-# Field 17 : swflux penetrating through ice into ocean 
-#########
-swflx_io sw_flux 367 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 18 : latent heat flux
-##########
-qflux_io q_flux 452 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-#########
-# Field 19 : Sensible heat flux
-##########
-shflx_io t_flux 362 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 20 : LW radiation flux down
-##########
-lwflx_io lw_flux 366 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 21 : runoff
-########## 
-runof_io runof 297 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 22 : surface pressure
-########## 
-press_io p 33 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 23 : ice concentration
-########## 
-aice_io aice 44 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS 
-INSTANT
-##########
-# Field 24 : ice melting waterflux
-########## 
-melt_io wfimelt 36 1200 1 i2o.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 25 : ice forming eaterflux
-########## 
-form_io wfiform 36 1200 1 i2o.nc EXPORTED
+strsu_io:strsv_io:rain_io:snow_io:stflx_io:htflx_io:swflx_io:qflux_io:shflx_io:lwflx_io:runof_io:press_io:aice_io:melt_io:form_io  u_flux:v_flux:lprec:fprec:salt_flx:mh_flux:sw_flux:q_flux:t_flux:lw_flux:runof:p:aice:wfimelt:wfiform  1 1200 1 i2o.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
 P 0 P 0
 #
@@ -322,70 +115,12 @@ INSTANT
 #                      OCEAN --->>> ICE
 #                      ----------------
 ########## 
-# Field 26 : Sea surface temperature (Celsius in MOM4)
+# Fields 26-32 : Sea surface temperature (Celsius in MOM4), Sea surface salinity (psu), 'eastward' sea surface water velocity, 'northward' sea surface water velocity, frazil ice fromation energy (J/m^2), sea surface slope _x_ (m/m), sea surface slope _y_ (m/m)
 ##########
-t_surf sst_i 1 1200 1 o2i.nc EXPORTED
+t_surf:s_surf:u_surf:v_surf:frazil:dssldx:dssldy  sst_i:s_surf:ssu_i:ssv_i:pfmice_i:sslx_i:ssly_i  1 1200 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
 P 0 P 0
 #  
-LOCTRANS
-INSTANT
-########## 
-# Field 27 : Sea surface salinity (psu)
-##########
-s_surf sss_i 312 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#  
-LOCTRANS
-INSTANT
-##########
-# Field 28 :  'eastward' sea surface water velocity
-########## 
-u_surf ssu_i 181 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-########## 
-# Field 29 : 'northward' sea surface water velocity
-##########
-v_surf ssv_i 261 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 30 :  frazil ice fromation energy (J/m^2) 
-#             ('441' is "upward_sea_ice_basal_heat_flux' 'W m-2')
-##########
-#pfmice_oi pfmice_i 441 1200 1 o2i.nc EXPORTED
-frazil pfmice_i 441 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 31 :  sea surface slope _x_ (m/m)
-#             ( '203' is "height" ...)
-##########
-dssldx sslx_i 203 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
-LOCTRANS
-INSTANT
-##########
-# Field 32 :  sea surface slope _y_ (m/m)
-#             ( '310' is "sea_surface_elevation")
-########## 
-dssldy ssly_i 310 1200 1 o2i.nc EXPORTED
-1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
-P 0 P 0
-#
 LOCTRANS
 INSTANT
 ############################################################################
