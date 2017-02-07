@@ -5,7 +5,7 @@
   , dt             = 1200
   , npt            = 2232
   , ndyn_dt        = 1
-  , runtype        = 'initial'
+  , runtype        = 'continue'
   , ice_ic         = 'default'
   , restart        = .false.
   , restart_dir    = './RESTART/'
