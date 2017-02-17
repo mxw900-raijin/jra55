@@ -8,7 +8,7 @@ memory: 2000Gb
 
 laboratory: /short/v45/aph502/COSIMA/access-om
 
-# collate: true
+collate: true
 collate_walltime: 4:00:00
 collate_mem: 30GB
 collate_ncpus: 4

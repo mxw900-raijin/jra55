@@ -5,14 +5,14 @@
     dt             = 1200
     npt            = 2232
     ndyn_dt        = 1
-    runtype        = 'initial'
+    runtype        = 'continue'
     ice_ic         = 'default'
-    restart        = .false.
+    restart        = .true.
     restart_dir    = './RESTART/'
     restart_file   = 'iced'
     pointer_file   = './RESTART/ice.restart_file'
-    dumpfreq       = 'y'
-    dumpfreq_n     = 1
+    dumpfreq       = 'm'
+    dumpfreq_n     = 6
     dump_last      = .true. 
     diagfreq       = 960
     diag_type      = 'file'
@@ -33,7 +33,7 @@
     write_ic       = .false.
     incond_dir     = './HISTORY/'
     incond_file    = 'iceh_ic'
-    restart_format = nc
+    restart_format = 'nc'
 /
 
 &grid_nml
