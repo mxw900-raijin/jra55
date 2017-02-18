@@ -6,9 +6,13 @@
         threading_read='multi'
         threading_write='single'
         fileset_write='single'
+/
+
+ &mpp_io_nml
         deflate_level = 5
         shuffle = 1
 /
+
 
  &fms_nml
        clock_grain='LOOP'
@@ -482,7 +486,7 @@
 
  &ocean_tracer_diag_nml
       tracer_conserve_days=30.0
-      diag_step=144
+      diag_step=288
       do_bitwise_exact_sum=.false.
 /
 
