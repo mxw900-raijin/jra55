@@ -1,4 +1,4 @@
-MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
+MOM5_JRA55_NYF_core_runoff
 1 1 1 0 0 0
 #output files
 "ocean",           1,  "months", 1, "days", "time",

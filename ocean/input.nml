@@ -3,9 +3,11 @@
 /
 
  &fms_io_nml
-         threading_read='multi'
-         threading_write='single'
-         fileset_write='single'
+        threading_read='multi'
+        threading_write='single'
+        fileset_write='single'
+        deflate_level = 5
+        shuffle = 1
 /
 
  &fms_nml
@@ -186,7 +188,7 @@
 /
 
  &ocean_model_nml
-      dt_ocean = 600
+      dt_ocean = 300
       time_tendency='twolevel'
       vertical_coordinate='zstar'
       baroclinic_split = 1
