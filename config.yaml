@@ -15,12 +15,6 @@ collate_ncpus: 4
 collate_queue: express
 collate_flags: -n4 -z -m -r
 
-# Need to set these to a larger value than default (5) as
-# prior restarts are needed for short run times, as they
-# are linked to by subsequent restarts
-restart_freq: 100
-restart_history: 100
-
 # Model configuration
 model: access
 submodels:
