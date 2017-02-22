@@ -22,6 +22,7 @@
     ocn_albedo=0.1
     gfdl_surface_flux=.true.
     chk_gfdl_roughness=.false.
+    smooth_forcing=.false.
     chk_frzmlt_sst=.false.
     chk_i2o_fields=.false.
     chk_o2i_fields=.false.
