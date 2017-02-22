@@ -33,7 +33,6 @@
     write_ic       = .false.
     incond_dir     = './HISTORY/'
     incond_file    = 'iceh_ic'
-    restart_format = 'nc'
 /
 
 &grid_nml
