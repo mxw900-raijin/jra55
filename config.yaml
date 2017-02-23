@@ -47,7 +47,7 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 1
+        months: 6
         days: 0
 
     start:
@@ -62,3 +62,5 @@ stacksize: unlimited
 runlog: true
 
 debug: false
+
+# imp: ipm/2.0.5
