@@ -2,10 +2,11 @@
 
 /
 
- &fms_io_nml
-        threading_read='multi'
-        threading_write='single'
-        fileset_write='single'
+&fms_io_nml
+    threading_read='multi'
+    threading_write='single'
+    fileset_write='single'
+    checksum_required=.false.
 /
 
  &mpp_io_nml
@@ -192,7 +193,7 @@
 /
 
  &ocean_model_nml
-      dt_ocean = 1200
+      dt_ocean = 300
       time_tendency='twolevel'
       vertical_coordinate='zstar'
       baroclinic_split = 1
@@ -201,6 +202,7 @@
       cmip_units=.true.
       debug=.false.
       layout = 32,30
+      io_layout = 8,6
 /
 
  &ocean_momentum_source_nml
@@ -486,13 +488,13 @@
 
  &ocean_tracer_diag_nml
       tracer_conserve_days=30.0
-      diag_step=288
+      diag_step=4320
       do_bitwise_exact_sum=.false.
 /
 
  &ocean_tracer_nml
       debug_this_module=.false.
-      use_tempsalt_check_range=.true.
+      use_tempsalt_check_range=.false.
       zero_tendency=.false.
       remap_depth_to_s_init=.false.
       zero_tracer_source=.false.
@@ -621,6 +623,10 @@
         make_exchange_reproduce=.false.
 	    interp_method = 'second_order'
         nsubset = 16
+        xgrid_log=.false.
+        ! do_alltoall = .true.
+        ! do_alltoallv = .true.
+
 /
 
 
