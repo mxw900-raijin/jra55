@@ -51,7 +51,7 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 1
+        months: 0
         days: 20
 
     start:
