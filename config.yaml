@@ -29,13 +29,13 @@ submodels:
 
     - name: atmosphere
       model: matm
-      exe: matm_cice.exe
+      exe: matm_cice-scorep.exe
       input: jra55-0.8_025
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM.x
+      exe: fms_ACCESS-OM.x.scorep
       input: 
             - mom
             # - iaf-sw21d
@@ -43,7 +43,7 @@ submodels:
 
     - name: ice
       model: cice
-      exe: cice_access-om_1440x1080_192p.exe
+      exe: cice_access-om_1440x1080_192p.exe.scorep
       input: cice
       ncpus: 192
 
@@ -67,4 +67,11 @@ runlog: true
 
 debug: false
 
-ipm: 2.0.5
+# ipm: 2.0.5
+
+scorep: 3.0
+
+env:
+    SCOREP_TOTAL_MEMORY: 1073741824
+    SCOREP_MPI_ENABLE_GROUPS: all
+    SCOREP_METRIC_RUSAGE: all
