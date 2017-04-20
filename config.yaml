@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: fp0
-walltime: 02:00:00
+walltime: 02:30:00
 jobname: om2_jra55
 ncpus: 1153
 #memory: 2000Gb
