@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: fp0
-walltime: 00:20:00
+walltime: 02:00:00
 jobname: om2_jra55
 ncpus: 1153
 #memory: 2000Gb
@@ -10,6 +10,7 @@ ncpus: 1153
 #   nodesize: 28
 
 laboratory: /short/fp0/mxw900/cosima
+repeat: True
 collate: false
 
 #collate: true
@@ -52,7 +53,7 @@ calendar:
     runtime:
         years: 0
         months: 0
-        days: 1  
+        days: 30
 
     start:
         year: 1
