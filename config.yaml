@@ -31,7 +31,8 @@ submodels:
     - name: atmosphere
       model: matm
       exe: matm
-      input: jra55-0.8_025
+      #input: jra55-0.8_025
+      input: /short/v45/mxw900/jra55/nc64
       ncpus: 1
 
     - name: ocean
